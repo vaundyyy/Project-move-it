@@ -1,15 +1,24 @@
 <main>
-    <section>
-        <img src="images/Logo.svg" alt="Logo MoveIt">
-        <h2></h2>
-        <button></button>
-        <div>]
-            <span>or</span>
-        </div>
-        <button></button>
-    </section>
-    <section>
-        <h1>You Should, MoveIt!</h1>
-        <img src="images/main-illustration.svg" alt="Rapaz de camiseta branca com listras amarelas andando de skate">
-    </section>
+  <section class="form-section">
+    <img src="images/Logo.svg" alt="Logo MoveIt" />
+    <h2>{{ title }}</h2>
+    <ng-content></ng-content>
+    <div class="btn-wrapper">
+      <button class="btn-primary">{{ primaryBtnText }}</button>
+      <div class="divider">
+        <div></div>
+        <span>or</span>
+        <div></div>
+      </div>
+      <button class="btn-secondary">{{ secondaryBtnText }}</button>
+    </div>
+  </section>
+
+  <section class="main-section">
+    <h1>You Should, MoveIt!</h1>
+    <img
+      src="images/main-illustration.svg"
+      alt="Rapaz de camiseta branca com listras amarelas andando de skate"
+    />
+  </section>
 </main>
